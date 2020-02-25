@@ -1,0 +1,103 @@
+   <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Jikan API</title>
+	<meta name="author" content="Gabriela Guarini" />
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Open+Sans:400,600" rel="stylesheet">
+	<style>
+
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+	}
+	.intro p{
+		color: #fff;
+	}
+
+	
+	.section{
+		text-align:center;
+	}
+
+	</style>
+
+</head>
+<body>
+    
+
+<div id="fullpage">
+	<div class="section " id="section0">
+		<div class="intro">
+			<h1>Jikan (時間)</h1>
+			<p>open-source PHP & REST API no oficial para MyAnimeList</p>
+			<p>la comunidad online y base de datos más activa de anime + manga</p>
+			<a  target="_blank" href="https://jikan.moe/" class="btn btn-outline-light" role="button">Web oficial</a>
+		</div>
+	</div>
+	<div class="section" id="section1">
+	    <div class="slide" id="slide1">
+			<div class="intro">
+			    <h1>Simple de usar</h1>
+				<p>Busca información sobre animes en la base de datos de MyAnimeList, simplemente introduciendo el titulo</p>
+			</div>
+		</div>
+
+	    <div class="slide" id="slide2">
+			<h1>Toda la info de M.A.L en tu web!</h1>
+		</div>
+
+	</div>
+	<div class="section" id="section2">
+		
+    <header>   
+       <div class="intro pt-5">
+			<h1>Probar</h1>
+        </div>
+        <div class="hero">
+            <div class="right">
+                <div class="app">
+                    <div class="search">
+                        <input id="search_query" type="text" name="query" placeholder="search for an anime, e.g Naruto" />
+                        <button id="search">Go</button>
+                    </div>
+                    <div class="debug">
+                        Requesting: <a target="_blank" id="search_query_url" href="javascript:void(null)">API Request URL will appear here</a>
+                    </div>
+
+                    <div id="search_results" class="cards">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+		
+	</div>
+</div>
+
+<script >
+    $(document).ready(function() {
+	$('#fullpage').fullpage({
+		anchors: ['firstPage', 'secondPage', '3rdPage'],
+        sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
+        navigation: true,
+        navigationPosition: 'right',
+        responsiveWidth: 1100,
+        
+        afterResponsive: function(isResponsive){
+        }
+	});
+
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js" integrity="sha256-caNcSA0LvOCX90PTuEbwl+V09xPMca13CJUasl+VCtk=" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+body{background:#fff;font-family:'Open Sans',sans-serif;font-size:16px}
+a{text-decoration:none;color:#2E51A2}
+p{line-height:1.75;color:#343434}
+#section0{background:linear-gradient(to right, #ff4f9b, #ff6842)}
+#section1{background:linear-gradient(to right, #00ffd0, #9729ff)}
+header{height:100vh;width:100%;background:linear-gradient(to right, #2E51A2, #1B7AC2);box-sizing:border-box;padding:0 100px;overflow:hidden}
+header .hero h1{color:#fff}
+header .hero h5{color:hsl(206,76%,95%);letter-spacing:.025em;margin-bottom:50px;font-weight:normal}
+header .hero p{color:#fff;line-height:1.75;width:80%}
+header .hero .right{overflow:hidden;}
+header .hero .right .app .search{display:grid;grid-template-columns:auto 50px}
+header .hero .right .app .search input[type=text]{background:rgba(255,255,255,0.05);border-top-left-radius:8px;border-bottom-left-radius:8px;border-left:1px solid rgba(255,255,255,0.4);border-top:1px solid rgba(255,255,255,0.4);border-bottom:1px solid rgba(255,255,255,0.4);border-right:transparent;width:100%;padding:20px;box-sizing:border-box;color:#fff}
+header .hero .right .app .search input[type=text]::placeholder{color:rgba(255,255,255,0.6)}
+header .hero .right .app .search button{background:rgba(255,255,255,0.05);border-top-right-radius:8px;border-bottom-right-radius:8px;border-right:1px solid rgba(255,255,255,0.4);border-top:1px solid rgba(255,255,255,0.4);border-bottom:1px solid rgba(255,255,255,0.4);border-left:transparent;width:100%;box-sizing:border-box;color:rgba(255,255,255,0.8);cursor:pointer}
+header .hero .right .app .debug{font-size:14px;color:rgba(255,255,255,0.6);margin:10px 0}
+header .hero .right .app .debug a{color:rgba(255,255,255,0.9)}
+header .hero .right .app .cards{display:flex;flex-wrap:wrap;height: 400px; overflow-y: auto}
+header .hero .right .app .cards .card{height:230px;width:150px;margin:10px;border-radius:8px;background:#fff;overflow:hidden}
+header .hero .right .app .cards .card__image{height:190px;width:100%}
+header .hero .right .app .cards .card__image img{height:100%;width:100%;object-fit:cover}
+header .hero .right .app .cards .card__name{height:40px;width:100%;padding:0 20px;box-sizing:border-box;display:flex;justify-content:center;align-items:center;font-size:14px;color:#343434;font-weight:bold}
+header .hero .right .app .cards .card__name span{white-space:nowrap;text-overflow:ellipsis;overflow:hidden}
+@media only screen and (max-width: 1100px){header{height:unset;min-height:100vh}header .hero{grid-template-columns:1fr;grid-template-rows:auto auto}header .hero .right{padding:70px 0}}@media only screen and (max-width: 900px){header{padding:0 50px;display:flex;flex-direction:column}
+    
